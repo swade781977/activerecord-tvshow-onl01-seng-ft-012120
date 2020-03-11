@@ -10,7 +10,8 @@ class Show < ActiveRecord::Base
     s = Show.highest_rating
     p = Show.find_by "rating == '#{s}'"
   end
-    
+  
+  def self.
 
 
 
