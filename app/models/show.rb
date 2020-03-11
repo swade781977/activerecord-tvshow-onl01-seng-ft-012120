@@ -8,7 +8,7 @@ class Show < ActiveRecord::Base
   
   def self.most_popular_show
     s = Show.highest_rating
-    p = Show.find("rating == '#{s}'")
+    p = Show.find_by("rating == '#{s}'")
   end
     
 
