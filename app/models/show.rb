@@ -9,7 +9,7 @@ class Show < ActiveRecord::Base
   def self.most_popular_show
     s = Show.highest_rating
     binding.pry
-    Show.where("rating == 's'")
+    Show.where("rating == '#{s}'")
   end
     
 
